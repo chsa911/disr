@@ -1,0 +1,127 @@
+
+/*.navbar-toogler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    text-decoration: none
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: center center no-repeat;
+    background-size: 100% 100%
+}
+*/
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+
+    top{
+        width: 95%;
+        position: fixed;
+        background-color: #f7f7f7;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
+        border-bottom: 1px solid #b2b2b2;
+    }
+    
+    
+    .items{
+        background-color: #ffffff;
+        width: 100%;
+        padding-top: 50px;
+    }
+    
+.container.h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+.hr {
+    margin: 20px 0;
+    border: 1px solid;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    background: #ddd;
+}
+.container .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    padding: 30px;
+
+}
+.container .image-container .image{
+    height: 50px;
+    width: 50px;
+    border: 10px solid  #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.container .image-container .image img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;    
+   transition: .2s linear;
+}
+.container .image-container .image:hover img{
+    transform: scale(1.1);
+    }
+.container .popup-image{
+    position: fixed;
+    top:0; left:0;
+    background: rgba(0,0,0,.9);
+    height: 50%;
+    width: 50%;
+    z-index: 100;
+    
+    
+}
+.container .popup-image span{
+position:absolute;
+top:0; right:10px;
+font-size: 60px;
+font-weight: bolder;
+color: #fff;
+cursor: pointer;
+z-index: 100;
+  
+}
+.container .popup-image img{
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5% solid #fff;
+    border-radius: 5%;
+    width: 750px;
+    object-fit: cover;
+
+}
+@media (max-width:768px){
+    .container .popup-image img{
+        width:95%;
+
+    }
+}
+}
